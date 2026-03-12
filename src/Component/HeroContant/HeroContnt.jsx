@@ -59,7 +59,7 @@ const HeroContnt = () => {
         </p>
 
         {/* Input Box */}
-        <div className="mt-10 bg-white shadow-lg rounded-2xl p-6 w-[750px] max-w-full relative">
+        <div className="mt-10 bg-white shadow-lg rounded-2xl p-6 w-[750px] max-w-full relative mb-20">
           <input
             type="text"
             placeholder={displayText}
@@ -67,10 +67,11 @@ const HeroContnt = () => {
           />
           <div>
             <div className=" flex justify-between mt-9">
-              <p className="flex items-center gap-1 text-gray-500 bg-white border border-gray-300 rounded-full hover:bg-gray-100 duration-300 cursor-pointer px-2 py-1 text-sm">
-                <ImAttachment className=" text-sm" />
+              <label className="flex items-center gap-1 text-gray-500 bg-white border border-gray-300 rounded-full hover:bg-gray-100 duration-300 cursor-pointer px-2 py-1 text-sm">
+                <ImAttachment className="text-sm" />
                 Attach
-              </p>
+                <input type="file" className="hidden" />
+              </label>
               <div className=" flex items-center gap-2">
                 <div className="relative group inline-block">
                   <RiVoiceprintFill className="text-4xl p-2 rounded-full hover:bg-gray-100 text-gray-700 cursor-pointer" />
