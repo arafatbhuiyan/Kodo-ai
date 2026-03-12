@@ -3,6 +3,7 @@ import { NavLink, Outlet } from 'react-router';
 import Navbar from './Component/Navbar/Navbar';
 import HeroContnt from './Component/HeroContant/HeroContnt';
 import Community from './Component/CommunityDesignSection/Community';
+import HowItWorks from './Component/HowITWork/HowItWorks';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <HeroContnt></HeroContnt> 
       </div>
       <Community></Community>
+      <HowItWorks></HowItWorks>
       <Outlet></Outlet>
 
     </div>
